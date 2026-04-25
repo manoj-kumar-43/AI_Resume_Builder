@@ -8,7 +8,7 @@ export default defineConfig({
     port: 5173,
     proxy: {
       '/api': {
-        target: 'http://localhost:5000',
+        target: 'https://ai-resume-builder-5le3.onrender.com/api',
         changeOrigin: true,
       },
     },
