@@ -13,7 +13,7 @@ import { errorHandler, notFoundHandler } from './middleware/error.middleware.js'
 const app = express(); // Express app instance (Express.js: Application Setup)
 
 // --- Middleware ---
-app.use(cors({ origin: process.env.CLIENT_URL || 'http://localhost:5173' })); // CORS middleware (Express.js: Middleware)
+app.use(cors({ origin: process.env.CLIENT_URL || 'https://ai-resume-builder-5le3.onrender.com' })); // CORS middleware (Express.js: Middleware)
 app.use(express.json({ limit: '10mb' })); // JSON body parser (Express.js: Middleware)
 
 // --- Routes ---
